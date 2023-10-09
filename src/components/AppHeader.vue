@@ -1,6 +1,5 @@
 <template>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+ 
   <nav class="navbar navbar-expand-lg bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand text-light" href="#">Navbar</a>
@@ -9,26 +8,17 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-light" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item text-light" href="#">Action</a></li>
-            <li><a class="dropdown-item text-light" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item text-light" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled text-light" aria-disabled="true">Disabled</a>
-        </li>
+          <li class="nav-item">
+        <router-link to="/" class="nav-link text-light"> Home page </router-link>        
+          </li>
+
+          <li class="nav-item">
+        <router-link to="HeroApp" class="nav-link text-light"> HeroApp </router-link>        
+          </li>
+
+          <li class="nav-item">
+        <router-link to="EventCalender" class="nav-link text-light">Calender App </router-link>        
+          </li>
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -42,6 +32,7 @@
 
 <script>
 export default {
+  
 }
 </script>
 

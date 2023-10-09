@@ -41,14 +41,18 @@
 
 <script>
 export default {
+
   data() {
+    
     return {
+      
       currentDate: new Date().getUTCDate(),
       currentMonth: new Date().getMonth(),
       currentYear: new Date().getFullYear(),
       days: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
     };
   },
+  
   methods: {
     daysInMonth() {
       return new Date(this.currentYear, this.currentMonth + 1, 0).getDate();
@@ -79,9 +83,11 @@ export default {
         num
       ).toDateString();
       const currentFullDate = new Date().toDateString();
-      return calenderFullDate === currentFullDate ? "text-yellow-600" : "";
+      return calenderFullDate === currentFullDate ? "bg-yellow-600" : "";
     },
+    
   },
+  
   computed: {
     currentMonthName() {
       return new Date(
@@ -89,8 +95,11 @@ export default {
         this.currentMonth
       ).toLocaleString("default", { month: "long" });
     },
+    
   },
+  
 };
+
 </script>
 
 <style></style>
