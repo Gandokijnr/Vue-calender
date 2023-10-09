@@ -7,7 +7,7 @@
     </section>
     <section class="flex my-2">
       <p
-        class="text-center"
+        class="text-center fw-bolder"
         style="width: 14.28%"
         v-for="day in days"
         :key="day"
